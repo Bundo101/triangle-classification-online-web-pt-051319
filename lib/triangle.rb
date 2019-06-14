@@ -11,7 +11,10 @@ class Triangle
     if @x > 0 && @y > 0 && @z > 0
       if @x == @y && @x == @z && @y == @z
         :equilateral
-      elsif @x == @y && @x == @z
+      elsif (@x == @y && @x == @z) || (@x == @z && @y == @z) || (@x == @y && @z == @y)
+        :isosceles
+      else
+        :squalene
       end
     end
   end
