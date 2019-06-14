@@ -14,7 +14,7 @@ class Triangle
       elsif (@x == @y) || (@x == @z) || (@z == @y)
         :isosceles
       else
-        :squalene
+        :scalene
       end
     end
   end
